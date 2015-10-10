@@ -1,0 +1,245 @@
+@font-face {
+	font-family: abel;
+	src: url('Abel-Regular.ttf');
+}
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	font-family: abel;
+	text-align: center;
+}
+#firstPage {
+	position: relative;
+	color: black;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#firstPage a{
+	color: black;
+	text-decoration: none;
+}
+#flipCircle {
+	position: absolute;
+	top:45%;
+	left:50%;
+	margin-left: -120px;
+	margin-top: -120px;
+	height: 240px;
+	width: 240px;
+	z-index: 2;
+	overflow: hidden;
+	background: transparent;
+	text-transform: uppercase;
+	font-size: 2em;
+	perspective: 1600px;
+	-webkit-perspective: 1600px;
+	-moz-perspective: 1600px;
+	-ms-perspective: 1600px;
+	-o-perspective: 1600px;
+}
+#comingSoon {
+	position:absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%; 
+	overflow: hidden;
+	transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	perspective: 1600px;
+	-webkit-perspective: 1600px;
+	-moz-perspective: 1600px;
+	-ms-perspective: 1600px;
+	-o-perspective: 1600px;
+}
+#techspardha {
+	position:absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: #424242;
+	background: url('../images/ts.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	transform: rotateX(180deg);
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	perspective: 1600px;
+	-webkit-perspective: 1600px;
+	-moz-perspective: 1600px;
+	-ms-perspective: 1600px;
+	-o-perspective: 1600px;
+
+}
+.halfCircle {
+	position: absolute;
+	width:100%;
+	height:50%;
+}
+#upperHalfCircle {
+	top:0;
+	left:0;
+	color: #dc6903;
+	background-color: white;
+	padding-top: 18%;
+}
+#lowerHalfCircle {
+	top:50%;
+	left:0;
+	background-color: #dc6903;
+	color: white;
+	padding-bottom: 60%;
+}
+#upper {
+	position:relative;
+	width: 100%;
+	height:45%;
+	background-color: #424242;
+	background: url('../images/manav.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+#lower {
+	position: relative;
+	width: 100%;
+	height:55%;
+}
+#heading {
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+#heading1 {
+	position: absolute;
+	top: 50%;
+	height:30%;
+	width:100%;
+	font-size: 3.7em;
+	letter-spacing: .08em;
+}
+#heading2 {
+	position: absolute;
+	top: 90%;
+	height:15%;
+	width:100%;
+	font-size: 1.145em;
+}
+#description {
+	margin-top: 3%;
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+#follow p {
+	margin: 0;
+	font-size: 1.2em;
+}
+#follow ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#follow ul li {
+	display: inline;
+	margin-left: 0%;
+}
+#follow img {
+	margin: 0;
+	padding: 0;
+	width: 30px;
+}
+#info a {
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+}
+@media only screen and (max-width:900px) {
+	#heading1 {
+		font-size: 3.2em;
+	}
+	#heading2 {
+		font-size: .98em;
+	}
+	#follow p {
+		font-size: 1.42em;
+	}
+	#info a {
+		font-size: 1.23em;
+	}
+}
+@media only screen and (max-width:700px) {
+	body {
+	    min-height: 400px;
+	    overflow-Y: scroll; 
+	}
+	#heading1 {
+		font-size: 2.6em;
+	}
+	#heading2 {
+		font-size: .8em;
+	}
+	#follow p {
+		font-size: 1.154em;
+	}
+	#info a {
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width:520px) {
+	
+	#heading1 {
+		font-size: 2.14em;
+	}
+	#heading2 {
+		top: 80%;
+		font-size: .659em;
+	}
+	#follow p {
+		font-size: .95em;
+	}
+	#info a {
+		font-size: .832em;
+	}
+}
+@media only screen and (max-width:320px) {
+	#heading1 {
+		font-size: 1.8em;
+	}
+	#heading2 {
+		font-size: .555em;
+	}
+	#follow p {
+		font-size: .8em;
+	}
+	#info a {
+		font-size: .7em;
+	}
+}
+
